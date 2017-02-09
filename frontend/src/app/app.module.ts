@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { DocumentsComponent } from './documents/documents.component';
 import { ProposalListComponent } from './proposal-list/proposal-list.component';
+import { ProposalNewComponent } from './proposal-new/proposal-new.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     DocumentsComponent,
-    ProposalListComponent
+    ProposalListComponent,
+    ProposalNewComponent
   ],
   imports: [
     BrowserModule,
