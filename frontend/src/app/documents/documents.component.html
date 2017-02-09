@@ -1,3 +1,9 @@
-<p>
-  documents works!
-</p>
+<h2>
+  {{pageTitle}}
+</h2>
+<div *ngFor="let doc of documents">
+  <h3>{{doc.title}}</h3>
+  <em>{{doc.description}}</em>
+  <a href="{{doc.file_url}}">Download File</a>
+  <hr>
+</div>
