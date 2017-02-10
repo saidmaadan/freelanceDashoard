@@ -1,20 +1,26 @@
-header{
-  width: 100%;
-  height: 60px;
-  background: #222;
-  border-right: 0;
-  border-left: 0;
+/*.active{
+  background-color: red;
+}*/
+.app-body{
+  margin-top: 10px;
 }
-nav{
-  margin-left: 10%;
-  padding-top: 20px;
-  font-size: 20px;
-  color: white;
 
+.nav-styles{
+  background-color: #1a1b22;
 }
-nav a{
-  text-decoration: none;
+
+.nav-styles a{
   color: white;
-  padding-right: 10px;
-  font-size: 20px;
+}
+
+.nav-link.active{
+  color: #e64758 !important;
+}
+
+.dropdown-links a{
+  color: #1a1b22;
+}
+
+.dropdown-links a:hover{
+  color: #252830;
 }
