@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Observable } from 'rxjs/Rx';
 import { Proposal} from './proposal';
 import { ProposalService } from './proposal.service';
@@ -19,7 +20,7 @@ export class ProposalListComponent implements OnInit {
   mode = "Observable";
 
   constructor(
-    private proposalService: ProposalService ) { }
+    private proposalService: ProposalService, private router: Router ) { }
 
   ngOnInit() {
     let timer = Observable.timer(0, 5000)
@@ -33,6 +34,10 @@ export class ProposalListComponent implements OnInit {
     });
   }
 
+  goToShow(proposal:Proposal):void{
+    let link = ['/proposal', proposal.id];
+    this.router.navigate(link);
+  }
 }
 
 // proposals: Proposal[] = [
